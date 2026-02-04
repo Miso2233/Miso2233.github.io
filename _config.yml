@@ -13,10 +13,10 @@ future: true
 
 # SNS settings
 RSS: false
-weibo_username: huxpro
-zhihu_username: huxpro
-github_username: huxpro
-twitter_username: huxpro
+#weibo_username: huxpro
+#zhihu_username: huxpro
+github_username: Miso2233
+#twitter_username: huxpro
 #facebook_username:  huxpro
 #linkedin_username:  firstname-lastname-idxxxx
 
@@ -59,7 +59,7 @@ kramdown:
       start_line: 1
 
 # Disqus settings
-disqus_username: hux
+disqus_username: Miso
 
 # Netease settings
 netease_comment: false
@@ -69,13 +69,13 @@ netease_comment: false
 # ba_track_id: [your track id]
 
 # Google Analytics
-ga_track_id: "UA-49627206-1" # Format: UA-xxxxxx-xx
-ga_domain: huangxuan.me
+#ga_track_id: "UA-49627206-1" # Format: UA-xxxxxx-xx
+#ga_domain: huangxuan.me
 
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
-sidebar-about-description: "让梦想起飞的不是鸡翅，而是少年气 <br> React Team @ Meta"
-sidebar-avatar: https://github.com/Huxpro.png # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-about-description: "让梦想起飞的不是鸡翅，而是少年气 <br> 谭谈交通 2010"
+sidebar-avatar: https://github.com/Miso2233.png # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
 featured-tags: true # whether or not using Feature-Tags
