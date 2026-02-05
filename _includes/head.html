@@ -55,6 +55,27 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
         type="text/css">
 
+    <!-- MapleMono Font -->
+    <style>
+        @font-face {
+            font-family: 'MapleMono';
+            src: url('/fonts/MapleMono-NF-CN-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'MapleMono';
+            src: url('/fonts/MapleMono-NF-CN-Italic.ttf') format('truetype');
+            font-weight: normal;
+            font-style: italic;
+        }
+        
+        /* 强制应用MapleMono字体到代码块 */
+        .highlight, pre.highlight, code, pre, kbd, samp {
+            font-family: 'MapleMono', 'Fira Code', Menlo, Monaco, Consolas, "Courier New", monospace !important;
+        }
+    </style>
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

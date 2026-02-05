@@ -310,6 +310,7 @@ button.paper-button {
 pre.highlight {
   background: #282c34;
   color: #abb2bf;
+  font-family: "MapleMono", "Fira Code", Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 .highlight pre {
   background: #282c34;
@@ -771,7 +772,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: "Fira Code", Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: "MapleMono", "Fira Code", Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 .postlist-container {
   margin-bottom: 15px;
