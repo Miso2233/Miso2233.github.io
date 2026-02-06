@@ -5,7 +5,7 @@ subtitle: "关于本地存储"
 date: 2026-02-05
 author: "Miso"
 header-img: "img/post-bg-0.jpg"
-tags: ["python", "IFAWL", "开发"]
+tags: ["Python", "IFAWL", "开发"]
 ---
 
 ### 0. 前言 - 关于IFAWL
