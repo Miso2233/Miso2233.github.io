@@ -1,0 +1,88 @@
+<!-- 侧边栏音乐播放器 -->
+<hr>
+<section class="sidebar-music-player">
+    <h5>FAVOURITE MUSIC</h5>
+    <div class="music-player-container">
+        <meting-js
+            id="14007960172"
+            server="netease"
+            type="playlist"
+            fixed="false"
+            autoplay="false"
+            volume="0.5"
+            mutex="true"
+            list-folded="true"
+            list-max-height="200"
+            theme="#0085a1"
+            preload="auto"
+            order="random">
+        </meting-js>
+    </div>
+</section>
+
+<!-- 移动端底部固定播放器 -->
+<div class="mobile-music-player" style="display: none;">
+    <meting-js
+        id="14007960172"
+        server="netease"
+        type="playlist"
+        fixed="true"
+        autoplay="false"
+        volume="0.5"
+        mutex="true"
+        list-folded="true"
+        list-max-height="0"
+        theme="#0085a1">
+    </meting-js>
+</div>
+
+<script>
+// 响应式播放器切换
+function initMusicPlayer() {
+    const sidebarPlayer = document.querySelector('.sidebar-music-player');
+    const mobilePlayer = document.querySelector('.mobile-music-player');
+    
+    function checkScreenSize() {
+        if (window.innerWidth <= 768) {
+            // 移动端：显示底部固定播放器，隐藏侧边栏播放器
+            if (sidebarPlayer) sidebarPlayer.style.display = 'none';
+            if (mobilePlayer) mobilePlayer.style.display = 'block';
+        } else {
+            // 桌面端：显示侧边栏播放器，隐藏底部固定播放器
+            if (sidebarPlayer) sidebarPlayer.style.display = 'block';
+            if (mobilePlayer) mobilePlayer.style.display = 'none';
+        }
+    }
+    
+    // 初始化检查
+    checkScreenSize();
+    
+    // 监听窗口大小变化
+    window.addEventListener('resize', checkScreenSize);
+    
+    // 等待 MetingJS 加载完成
+    if (typeof Meting !== 'undefined') {
+        // MetingJS 加载完成后的回调
+        document.addEventListener('DOMContentLoaded', function() {
+            // 添加播放器加载状态处理
+            const metingElements = document.querySelectorAll('meting-js');
+            metingElements.forEach(element => {
+                element.addEventListener('load', function() {
+                    console.log('MetingJS player loaded successfully');
+                });
+                
+                element.addEventListener('error', function() {
+                    console.error('MetingJS player failed to load');
+                });
+            });
+        });
+    }
+}
+
+// 页面加载完成后初始化播放器
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initMusicPlayer);
+} else {
+    initMusicPlayer();
+}
+</script>
