@@ -94,5 +94,6 @@ friends:
     { title: "Csugu", href: "https://github.com/Csugu" },
     { title: "Tecrel", href: "https://github.com/Tecrel" },
     { title: "Kioroshiaki", href: "https://kioroshiaki.gi" },
-    { title: "Map1e", href: "https://map1e-suk1.github.io/friends/" },
+    { title: "Map1e", href: "https://map1e-suk1.github.io" },
+    { title: "aClosure", href: "https://aclosure.github.io/" },
   ]
